@@ -8,19 +8,24 @@
 typedef struct{
     float deltaDistance;
     float deltaTime;
-    float resultVelocity;
+ 
  } velocity;
 
 typedef struct{
     float deltaVelocity;
     float deltaTime;
-    float resultAcceleration;
+   
 } acceleration;
 
 typedef struct{
     float mass;
     float velocity;
-    float resultImplus;
-} impuls;
+   } impuls;
+
+float computeVelocity(velocity *v);
+float computeAcceleration(acceleration *a);
+float computeImpuls(impuls *i);
+
+
 
 #endif //FORMULAS_H
