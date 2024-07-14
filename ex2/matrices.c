@@ -28,8 +28,17 @@ void printMatrix( int rows, int columns){
 
 int main(void){
 
+    int rowsToPrint;
+    int columnsToPrint;
 
-    printMatrix(50,50);
+    printf("Please Enter the number of rows for the Matrix:");
+    scanf("%d", &rowsToPrint);
+    
+    printf("Please Enter the number of columns for the Matrix:");
+    scanf("%d",&columnsToPrint);
+ 
+
+    printMatrix(rowsToPrint,columnsToPrint);
 
     printf("\n\n\n");
 
