@@ -4,16 +4,30 @@
 #include <stdio.h>
 #include "formulas.h";
 
-int main(void){
 
+velocity computeVelocity(distance deltaDistance, time deltaTime){
+    velocity resultingVelocity = deltaDistance/deltaTime;
 
-
-    return 0;
-
+    return resultingVelocity;
 }
-/*  
-*   computes the velocity 
-*/
+
+acceleration computeAcceleration(velocity deltaVelocity, time deltaTime){
+    acceleration resultingAcceleration = deltaVelocity/deltaTime;
+    
+    return resultingAcceleration;
+    
+}
+
+impuls computeImpuls(mass givenMass, velocity givenVelocity){
+    impuls resultingImpuls = givenMass*givenVelocity;
+
+    return resultingImpuls;
+}
+
+/*
+
+//   computes the velocity 
+
     float computeVelocity(velocity *v){
         float distance = v->deltaDistance;
         float time = v->deltaTime;
@@ -23,7 +37,7 @@ int main(void){
     }
 /*  
 *   computes acceleration
-*/
+/*
     float computeAcceleration(acceleration *a){
         float time = a->deltaTime;
         float velocity = a->deltaVelocity;
@@ -33,7 +47,7 @@ int main(void){
     }
 /*  
 *   computes the impuls  
-*/
+/*
     float computeImpuls(impuls *i){
         float mass = i->mass;
         float velocity = i->velocity;
@@ -41,3 +55,7 @@ int main(void){
 
         return impuls;
     }
+
+
+*/
+
