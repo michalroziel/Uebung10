@@ -14,9 +14,11 @@ typedef float acceleration;
 typedef float mass;
 typedef float impuls;
 
-    velocity computeVelocity(distance deltaDistance, time deltaTime);
-    acceleration computeAcceleration(velocity deltaVelocity, time deltaTime);
-    impuls computeImpuls(mass givenMass, velocity givenVelocity);
+velocity computeVelocity(distance deltaDistance, time deltaTime);
+
+acceleration computeAcceleration(velocity deltaVelocity, time deltaTime);
+
+impuls computeImpuls(mass givenMass, velocity givenVelocity);
 
 
 /*
@@ -38,8 +40,6 @@ typedef struct{
    } impuls;
 
    */
-
-
 
 
 #endif //FORMULAS_H
