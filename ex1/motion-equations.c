@@ -7,7 +7,7 @@
  * @param exponent
  * @return base to the power of exponent
  */
-float powerFunction(float base, float exponent)
+float powerFunction(const float base, const float exponent)
 {
     if (exponent == 0)
     {
