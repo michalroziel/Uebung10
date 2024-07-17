@@ -4,29 +4,49 @@
 #include <stdio.h>
 #include "formulas.h";
 
+/**
+ *
+ * @param deltaDistance
+ * @param deltaTime
+ * @return the resulting velocity
+ */
 
-velocity computeVelocity(distance deltaDistance, time deltaTime){
-    velocity resultingVelocity = deltaDistance/deltaTime;
+velocity computeVelocity(distance deltaDistance, time deltaTime)
+{
+    velocity resultingVelocity = deltaDistance / deltaTime;
 
     return resultingVelocity;
 }
 
-acceleration computeAcceleration(velocity deltaVelocity, time deltaTime){
-    acceleration resultingAcceleration = deltaVelocity/deltaTime;
-    
+/**
+ *
+ * @param deltaVelocity
+ * @param deltaTime
+ * @return the resulting acceleration
+ */
+acceleration computeAcceleration(velocity deltaVelocity, time deltaTime)
+{
+    acceleration resultingAcceleration = deltaVelocity / deltaTime;
+
     return resultingAcceleration;
-    
 }
 
-impuls computeImpuls(mass givenMass, velocity givenVelocity){
-    impuls resultingImpuls = givenMass*givenVelocity;
+/**
+ *
+ * @param givenMass
+ * @param givenVelocity
+ * @return the resulting impuls
+ */
+impuls computeImpuls(mass givenMass, velocity givenVelocity)
+{
+    impuls resultingImpuls = givenMass * givenVelocity;
 
     return resultingImpuls;
 }
 
 /*
 
-//   computes the velocity 
+//   computes the velocity
 
     float computeVelocity(velocity *v){
         float distance = v->deltaDistance;
@@ -35,7 +55,7 @@ impuls computeImpuls(mass givenMass, velocity givenVelocity){
 
         return velocity;
     }
-/*  
+/*
 *   computes acceleration
 /*
     float computeAcceleration(acceleration *a){
@@ -45,8 +65,8 @@ impuls computeImpuls(mass givenMass, velocity givenVelocity){
 
         return acceleration;
     }
-/*  
-*   computes the impuls  
+/*
+*   computes the impuls
 /*
     float computeImpuls(impuls *i){
         float mass = i->mass;
@@ -58,4 +78,3 @@ impuls computeImpuls(mass givenMass, velocity givenVelocity){
 
 
 */
-

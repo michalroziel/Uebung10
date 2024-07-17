@@ -14,10 +14,28 @@ typedef float acceleration;
 typedef float mass;
 typedef float impuls;
 
+/**
+ *
+ * @param deltaDistance
+ * @param deltaTime
+ * @return the resulting velocity
+ */
 velocity computeVelocity(distance deltaDistance, time deltaTime);
 
+/**
+ *
+ * @param deltaVelocity
+ * @param deltaTime
+ * @return the rsulting acceleration
+ */
 acceleration computeAcceleration(velocity deltaVelocity, time deltaTime);
 
+/**
+ *
+ * @param givenMass
+ * @param givenVelocity
+ * @return the resulting impuls
+ */
 impuls computeImpuls(mass givenMass, velocity givenVelocity);
 
 

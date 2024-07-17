@@ -12,4 +12,6 @@ float computeDistUniLinearAccMotion(velocity velocityStart, velocity velocityEnd
 /*
 *   describes the veolicity in an uniformly accelerated linear motion
 */
-float computeVelocityUniAccMotion(acceleration givenAcceleration, time timeStart, time timeEnd, velocity velocityStart);
+float computeVelocityUniAccMotion(acceleration givenAcceleration,
+                                  time timeStart, time timeEnd,
+                                  velocity velocityStart);
